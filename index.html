@@ -1,22 +1,22 @@
-<p>
-   Store Locator
+
+
    <meta name="viewport" content="initial-scale=1" />
-</p>
-<p>
+
+
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-</p>
-<p>
+
+
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</p>
-<p>
+
+
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
    <link href="https://code.getmdl.io/1.2.0/material.pink-red.min.css" rel="stylesheet" />
-</p>
-<p>
+
+
    <script type="text/javascript" src="https://code.getmdl.io/1.2.0/material.min.js" defer="defer"></script>
-</p>
+
 <style>
    .hvr-underline-from-center {
    display: inline-block;
@@ -109,6 +109,9 @@
    min-height: 195px;
    white-space: nowrap;
    }
+   .tophat{
+              margin-top: -25px !important;
+         }
    .mdl-switch__label {
    position: relative;
    cursor: pointer;
@@ -128,7 +131,103 @@
    min-height: 5px !important;
    }
    /* Underline From Center */
+   .slideanim {visibility:hidden;}
+         .slide {
+         /* The name of the animation */
+         animation-name: slide;
+         -webkit-animation-name: slide; 
+         /* The duration of the animation */
+         animation-duration: 1s; 
+         -webkit-animation-duration: 1s;
+         /* Make the element visible */
+         visibility: visible; 
+         }
+         /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+         @keyframes slide {
+         0% {
+         opacity: 0;
+         -webkit-transform: translateY(80%);
+         } 
+         100% {
+         opacity: 1;
+         -webkit-transform: translateY(0%);
+         } 
+         }
+         @-webkit-keyframes slide {
+         0% {
+         opacity: 0;
+         -webkit-transform: translateY(80%);
+         } 
+         100% {
+         opacity: 1;
+         -webkit-transform: translateY(0%);
+         }
+         .tophat{
+              margin-top: -25px !important;
+         }
 </style>
+<div class="mdl-grid mdl-grid--no-spacing tophat">
+   <div class="mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
+         <h4 class="wtfu mdl-shadow--4dp text-center">THE CORNER STORE THAT CARRIES EVERYTHING</h4>
+      </div>
+   </div>
+</div>
+
+<div class="mdl-grid logo-left">
+  <img class="center-block" src="https://basicsplus.com/skin/frontend/rwd/default/images/logo.png">
+</div>
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--12-col">
+    <img class="center-block" src="https://basicsplus.com/images/slideshow/services_banner_home.jpg">
+  </div>
+</div>
+
+<div class="mdl-grid test">
+   <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-shadow--8dp top-card min-test">
+      <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
+         <h4>Knife Sharpening</h4>
+      </div>
+      <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
+         <div class="video-container"><iframe src="https://www.youtube.com/embed/slX4tc9oTas?rel=0" height="300" width="80%"></iframe></div>
+      </div>
+      <div class="mdl-card__actions mdl-card--border text-center">
+         <a href="tel: +16468286586"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>
+         <span class="mdl-cell--hide-phone mdl-cell--hide-tablet">Call for Sevice: 646-828-6586</span>
+      </div>
+   </div>
+   <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-shadow--8dp top-card min-test">
+      <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
+         <h4>Locksmith</h4>
+      </div>
+      <figure class="mdl-card__media tiff"><img alt="" src="https://basicsplus.com/media/catalog/category/lock_banner3.jpg"></figure>
+      <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
+         <div>
+            <p>At Basics Plus we offer low affordable pick up and drop off delivery services for Knife sharpening and Miele repairs at a convenient time of your choice with a flat price of $10. Our trained team of professionals will make every effort to accommodate you and work around your time schedule. If you are busy and do not have time to fix your Miele or sharpen your knives you can trust us to take care of your problems. Leave it in our hands, we will sharpen your knives, clean or repair your Miele vacuum for you and return it on the time of your choice. If you have any concern or questions contact us at: 646-828-6586 for free consultation.</p>
+         </div>
+      </div>
+   </div>
+   <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-shadow--8dp top-card min-test">
+      <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
+         <h4>Miele Service</h4>
+      </div>
+      <!-- <figure class="mdl-card__media tiff"><img alt="" src="https://basicsplus.com/media/catalog/category/miele_services.jpg"></figure> -->
+      <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
+         <div class="video-container"><iframe src="https://www.youtube.com/embed/3CCdOGRzUZE?rel=0" height="300" width="80%"></iframe></div>
+      </div>
+   </div>
+</div>
+
+<div class="mdl-grid">
+   <div class="mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
+         <h4 class="wtfu mdl-shadow--4dp">Shop by Brand</h4>
+      </div>
+   </div>
+</div>
+
+
 <div class="mdl-grid slideanim center-block">
    <!-- Riverside -->
    <div class="mdl-cell mdl-cell--2-col-phone bigbox mdl-cell--4-col-tablet ">
@@ -259,42 +358,8 @@
       </div>
    </div>
 </div>
+
 <div class="mdl-grid test">
-   <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-shadow--8dp top-card min-test">
-      <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
-         <h4>Knife Sharpening</h4>
-         <!-- <figure class="mdl-card__media tiff"><img alt="" src="https://basicsplus.com/media/catalog/category/knife-zeev-1.jpg"></figure> -->
-      </div>
-      <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
-         <div class="video-container"><iframe src="https://www.youtube.com/embed/slX4tc9oTas?rel=0" height="300" width="80%"></iframe></div>
-      </div>
-      <div class="mdl-card__actions mdl-card--border text-center">
-         <a href="tel: +16468286586"><button class="mdl-button mdl-js-button mdl-js-ripple-effect visible-xs-inline mdl-button--primary"><i class="material-icons">call</i>Call</button></a>
-         <span class="mdl-cell--hide-phone mdl-cell--hide-tablet">Call for Sevice: 646-828-6586</span>
-      </div>
-   </div>
-   <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-shadow--8dp top-card min-test">
-      <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
-         <h4>Pick Up &amp; Drop Off</h4>
-      </div>
-      <figure class="mdl-card__media tiff"><img alt="" src="https://basicsplus.com/media/catalog/category/lock_banner3.jpg"></figure>
-      <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
-         <div>
-            <p>At Basics Plus we offer low affordable pick up and drop off delivery services for Knife sharpening and Miele repairs at a convenient time of your choice with a flat price of $10. Our trained team of professionals will make every effort to accommodate you and work around your time schedule. If you are busy and do not have time to fix your Miele or sharpen your knives you can trust us to take care of your problems. Leave it in our hands, we will sharpen your knives, clean or repair your Miele vacuum for you and return it on the time of your choice. If you have any concern or questions contact us at: 646-828-6586 for free consultation.</p>
-         </div>
-      </div>
-   </div>
-   <div class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-shadow--8dp top-card min-test">
-      <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
-         <h4>Miele Service</h4>
-      </div>
-      <!-- <figure class="mdl-card__media tiff"><img alt="" src="https://basicsplus.com/media/catalog/category/miele_services.jpg"></figure> -->
-      <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 text-center center-block">
-         <div class="video-container"><iframe src="https://www.youtube.com/embed/3CCdOGRzUZE?rel=0" height="300" width="80%"></iframe></div>
-      </div>
-   </div>
-</div>
-<div class="mdl-grid test mdl-grid--no-spacing">
    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-shadow--8dp top-card min-test">
       <div class="mdl-card__media mdl-color-text--grey-50 text-center bgr">
          <h4>Pick Up &amp; Drop Off</h4>
@@ -384,7 +449,7 @@
       </div>
    </div>
 </div>
-<div class="mdl-grid slideanim">
+<div class="mdl-grid ">
    <!-- 12th ST -->
    <div class="mdl-cell mdl-cell--4-col-phone bigbox mdl-cell--4-col-tablet">
       <div class="mdl-card mdl-shadow--8dp mdl-card--border box-card">
@@ -460,9 +525,20 @@
       </div>
    </div>
 </div>
+
 <p>
    <script type="text/javascript">// <![CDATA[
       // How can i loop over all the ids in 1 function
+      $(window).scroll(function() {
+         $(".slideanim").each(function(){
+           var pos = $(this).offset().top;
+         
+           var winTop = $(window).scrollTop();
+           if (pos < winTop + 600) {
+             $(this).addClass("slide");
+           }
+         });
+         });
        $(document).ready(function(){
             // on click on button
             $("#switch-rs").click(function(){
